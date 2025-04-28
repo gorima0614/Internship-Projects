@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Song Info Fetcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Spotify Song Info Fetcher</h1>
+        <form id="spotifyForm">
+            <label for="spotifyUrl">Enter Spotify Song URL:</label>
+            <input type="text" id="spotifyUrl" placeholder="https://open.spotify.com/track/...">
+            <button type="submit">Get Song Info</button>
+        </form>
+        <div id="songInfo" style="display:none;">
+            <h2>Song Details</h2>
+            <p><strong>Title:</strong> <span id="songTitle"></span></p>
+            <p><strong>Artist:</strong> <span id="songArtist"></span></p>
+            <p><strong>Album:</strong> <span id="songAlbum"></span></p>
+        </div>
+        <p id="errorMessage" style="color:red; display:none;">An error occurred. Please try again.</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
